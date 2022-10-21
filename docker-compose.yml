@@ -1,0 +1,12 @@
+version: "2.4"
+services:
+  example:
+    build: .
+    container_name: example
+    ports:
+      - "8989:8989"
+
+networks:
+  default:
+    name: apps
+    external: true
